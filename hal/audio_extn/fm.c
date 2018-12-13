@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2013-2017, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2013-2018, The Linux Foundation. All rights reserved.
  * Not a Contribution.
  *
  * Copyright (C) 2013 The Android Open Source Project
@@ -220,7 +220,6 @@ static int32_t fm_start(struct audio_device *adev)
     pcm_start(fmmod.fm_pcm_tx);
 
     fmmod.is_fm_running = true;
-    fm_set_volume(adev, fmmod.fm_volume, false);
 
     ALOGD("%s: exit: status(%d)", __func__, ret);
     return 0;
